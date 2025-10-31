@@ -1,0 +1,38 @@
+name: grafana-test-application
+
+services:  
+  prometheus:
+    image: prom/prometheus:v2.44.0
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.enable-remote-write-receiver'
+      - '--enable-feature=exemplar-storage'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--web.enable-lifecycle'
+    volumes:
+      - ./.config/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./tmp/prometheus:/prometheus
+
+  grafana:
+    image: grafana/grafana:9.5.2
+    container_name: grafana
+    environment:
+      - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+      - GF_AUTH_DISABLE_LOGIN_FORM=true
+    volumes:
+      - ./tmp/grafana/:/var/lib/grafana/
+      - ./.config/ds.yaml:/etc/grafana/provisioning/datasources/ds.yaml
+    ports:
+      - "3000:3000"
+
+networks:
+  default:
+    name: grafana-network
+    driver: bridge

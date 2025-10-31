@@ -1,0 +1,21 @@
+global:
+  scrape_interval:     10s
+  evaluation_interval: 10s
+
+  external_labels:
+      monitor: 'my-weather-project'
+
+scrape_configs:
+  #- job_name: 'prometheus'
+  #  scrape_interval: 10s
+  #  scheme: http
+  #  static_configs:
+  #    - targets: ['localhost:9090'] # For Prometheus itself
+ 
+  - job_name: 'appmetrics'
+    scrape_interval: 10s
+    scheme: http
+    #scheme: https
+    static_configs:
+      - targets: ['host.docker.internal:5118'] # доступ к localhost из контейнера
+      #- targets: ['host.docker.internal:7265'] # доступ к localhost из контейнера
