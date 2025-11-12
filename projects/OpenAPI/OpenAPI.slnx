@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="OpenApi.Scalar/OpenApi.Scalar.csproj" Id="77ca790b-a02d-4918-b5d5-0ef4c6e8b434" />
+  <Project Path="OpenApi.Swashbuckle/OpenApi.Swashbuckle.csproj" Id="1b82fac5-3d9c-4f5e-8165-4ed57c01ffa1" />
+</Solution>

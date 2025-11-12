@@ -1,0 +1,6 @@
+@OpenApi.Swashbuckle_HostAddress = http://localhost:5073
+
+GET {{OpenApi.Swashbuckle_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
