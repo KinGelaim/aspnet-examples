@@ -1,5 +1,3 @@
-using StackExchange.Redis;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();

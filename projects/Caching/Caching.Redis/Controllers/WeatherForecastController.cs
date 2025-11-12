@@ -1,11 +1,10 @@
+﻿using Caching.Redis.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.Memory;
-using RedisCaching.Models;
-using System.Data.SqlTypes;
 using System.Text.Json;
 
-namespace RedisCaching.Controllers;
+namespace Caching.Redis.Controllers;
 
 [ApiController]
 [Route("[controller]")]

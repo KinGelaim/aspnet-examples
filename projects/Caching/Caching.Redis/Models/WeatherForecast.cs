@@ -1,4 +1,4 @@
-namespace InMemoryCaching.Models;
+﻿namespace Caching.Redis.Models;
 
 public class WeatherForecast
 {

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Caching.InMemory/Caching.InMemory.csproj" />
+  <Project Path="Caching.Redis/Caching.Redis.csproj" />
+</Solution>

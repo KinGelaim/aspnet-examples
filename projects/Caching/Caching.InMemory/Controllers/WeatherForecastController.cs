@@ -1,8 +1,8 @@
-using InMemoryCaching.Models;
+﻿using Caching.InMemory.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 
-namespace InMemoryCaching.Controllers;
+namespace Caching.InMemory.Controllers;
 
 [ApiController]
 [Route("[controller]")]

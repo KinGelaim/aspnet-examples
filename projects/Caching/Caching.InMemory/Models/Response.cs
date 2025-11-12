@@ -1,4 +1,4 @@
-﻿namespace RedisCaching.Models;
+﻿namespace Caching.InMemory.Models;
 
 public sealed class Response
 {
