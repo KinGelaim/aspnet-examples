@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="MessageBroker.Kafka.Consumer/MessageBroker.Kafka.Consumer.csproj" Id="c4367b63-0dae-4b3d-bcf3-60abc031294f" />
+  <Project Path="MessageBroker.Kafka.Producer/MessageBroker.Kafka.Producer.csproj" Id="e18aad8e-ff79-4fa8-8f58-f8ad10a7d8e1" />
+  <Project Path="MessageBroker.RabbitMq.Consumer/MessageBroker.RabbitMq.Consumer.csproj" />
+  <Project Path="MessageBroker.RabbitMq.Producer/MessageBroker.RabbitMq.Producer.csproj" />
+</Solution>

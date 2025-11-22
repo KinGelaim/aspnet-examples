@@ -1,0 +1,14 @@
+name: 'message-broker-rabbit-mq-example'
+
+services:
+  rabbitmq:
+    image: bitnami/rabbitmq:3.9.22-debian-11-r6
+    ports:
+      - 5672:5672 # AMQP protocol port
+      - 15672:15672 # Management UI port
+    volumes:
+      - ./bitnami:/bitnami
+    environment:
+      - RABBITMQ_SECURE_PASSWORD=yes
+      - RABBITMQ_DEFAULT_USER=user
+      - RABBITMQ_DEFAULT_PASS=bitnami
