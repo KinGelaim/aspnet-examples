@@ -23,4 +23,10 @@ public class ExceptionController : ControllerBase
     {
         throw new Exception("Something went wrong");
     }
+
+    [HttpGet("not-found-result")]
+    public IResult NotFoundResult()
+    {
+        return Results.NotFound();
+    }
 }
