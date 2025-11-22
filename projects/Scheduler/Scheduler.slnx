@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Scheduler.Hangfire/Scheduler.Hangfire.csproj" />
+  <Project Path="Scheduler.Quartz/Scheduler.Quartz.csproj" />
+</Solution>
