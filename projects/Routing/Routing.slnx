@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Routing.Debugger/Routing.Debugger.csproj" />
+  <Project Path="Routing/Routing.csproj" />
+</Solution>
